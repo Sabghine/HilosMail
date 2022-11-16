@@ -55,7 +55,7 @@
         android:layout_height="62dp"
         android:layout_marginStart="70dp"
         android:layout_marginEnd="70dp"
-        android:text="Send/receive emails and organize them in which way you prefer "
+        android:text=" A place where Esprit students connect"
         android:textAlignment="center"
         android:textColor="@color/colorOpacityText"
         app:layout_constraintBottom_toTopOf="@+id/ll_nav_page"
