@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_inbox"
+            android:icon="@drawable/ic_inbox"
+            android:title="Inbox" />
+        <item
+            android:id="@+id/nav_message"
+            android:icon="@drawable/ic_message"
+            android:title=" New Message" />
+
+        <item
+            android:id="@+id/nav_sent"
+            android:icon="@drawable/ic_send"
+            android:title="sent" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_baseline_logout"
+            android:title="Logout" />
+
+
+    </group>
+
+
+    <item android:title="More">
+        <menu>
+
+            <item
+                android:id="@+id/nav_add"
+                android:icon="@drawable/ic_add"
+                android:title="Add"
+                />
+            <group android:id="@+id/group1"
+                   android:orderInCategory="999" />
+            <group
+                   android:id="@+id/group_category">
+
+            </group>
+        </menu>
+    </item>
+
+
+</menu>

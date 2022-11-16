@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MailDetailsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="771dp"
+        app:layout_constraintEnd_toStartOf="@+id/ll_to_addcategory"
+        app:layout_constraintStart_toStartOf="@+id/ll_to_addcategory">
+
+
+        <ImageView
+            android:id="@+id/iv_bg_login"
+            android:layout_width="452dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_login"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="93dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="60dp"
+            android:text="User"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintStart_toEndOf="@+id/hellothere"
+            app:layout_constraintTop_toTopOf="@+id/iv_bg_login" />
+
+        <TextView
+            android:id="@+id/tv_object"
+            style="@style/TextPrimaryBodyStyle"
+            android:layout_width="246dp"
+            android:layout_height="25dp"
+
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/subject_text"
+            app:layout_constraintTop_toBottomOf="@+id/hellothere" />
+
+        <TextView
+            android:id="@+id/tv_allmsg"
+            style="@style/TextPrimaryBodyStyle"
+            android:layout_width="350dp"
+            android:layout_height="162dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="28dp"
+            android:textColor="@color/colorOpacityText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_object" />
+
+        <TextView
+            android:id="@+id/tv_sendername"
+            style="@style/TextPrimaryBodyStyle"
+            android:layout_width="194dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="12dp"
+
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/hellothere"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <Button
+            android:id="@+id/btn_addemail_tocategory"
+            style="@style/TextPrimaryButtonStyle"
+            android:layout_width="176dp"
+            android:layout_height="48dp"
+
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/bg_button_rectangle"
+            android:text="Add To Category"
+            android:textColor="@color/colorSecondaryText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/list_categories"
+            app:layout_constraintTop_toBottomOf="@+id/tv_allmsg" />
+
+        <LinearLayout
+            android:id="@+id/ll_to_addcategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="206dp"
+            android:layout_marginEnd="206dp"
+            android:layout_marginBottom="56dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btn_addemail_tocategory"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_addemail_tocategory">
+
+
+        </LinearLayout>
+
+
+        <Spinner
+            android:id="@+id/list_categories"
+            android:layout_width="132dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="36dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_allmsg"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/hellothere"
+            android:layout_width="77dp"
+            android:layout_height="85dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/subject_text"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="40dp"
+            android:text="Subject"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hellothere" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>
